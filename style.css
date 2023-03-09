@@ -1,7 +1,6 @@
 html {
     box-sizing: border-box;
     font-size: 16px;
-    width: 1440px;
   }
   
   *, *:before, *:after {
@@ -21,6 +20,8 @@ html {
 
 body {
     font-family: 'Poppins', sans-serif;
+    width: 1440px;
+    margin: 0 auto;
 }
 
 h1 {
@@ -188,4 +189,206 @@ header {
     font-size: 26px;
     margin: 0;
     padding: 0;
+}
+
+.cart_2 {
+    background: url(images/calsif.png);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    height: 800px;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    flex-direction: column;
+    padding: 80px 0;
+    padding-right: 70px;
+}
+
+.cart_3 {
+    background: url(images/barten.png);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    height: 800px;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    flex-direction: column;
+    padding: 80px 0;
+    padding-right: 70px;
+}
+
+.cart_4 {
+    background: url(images/barten.png);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    height: 800px;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    flex-direction: column;
+    padding: 80px 0;
+    padding-right: 70px;
+}
+
+.cart_5 {
+    background: url(images/liment.png);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    height: 800px;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    flex-direction: column;
+    padding: 80px 0;
+    padding-right: 70px;
+}
+
+.cart_6 {
+    background: url(images/farl.png);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    height: 800px;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    flex-direction: column;
+    padding: 80px 0;
+    padding-right: 70px;
+}
+
+.cart_7 {
+    background: url(images/conver.png);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    height: 800px;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    flex-direction: column;
+    padding: 80px 0;
+    padding-right: 70px;
+}
+
+.cart_8 {
+    background: url(images/namico.png);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    height: 800px;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    flex-direction: column;
+    padding: 80px 0;
+    padding-right: 70px;
+}
+
+.project {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-right: 80px;
+}
+
+.project-img {
+    background: url(images/Без\ названия.png);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    width: 50%;
+    height: 500px;
+}
+
+.project-content {
+    width: 50%;
+    text-align: right;
+}
+
+.gallery_1_1, .gallery_1_2, .gallery_2, .gallery_2_2-block {
+    display: flex;
+    background: #292929;
+}
+
+.gallery_1_1-img-1, .gallery_2_1 {
+    width: 30%;
+    padding-right: 5px;
+}
+
+.gallery_1_1-img-2, .gallery_2_2 {
+    width: 70%;
+}
+
+.gallery_1_2 {
+    padding-top: 5px;
+}
+
+.gallery_1_2-img-1, .gallery_2_2-img-1 {
+    width: 50%;
+    padding-right: 5px;
+}
+
+.gallery_1_2-img-2, .gallery_2_2-img-2 {
+    width: 50%;
+}
+
+.gallery_2 {
+    padding-top: 5px;
+}
+
+.gallery_2_1-img {
+    width: 100%;
+    height: 100%;
+}
+
+.gallery_2_2-img-3 {
+    width: 100%;
+    height: 380px;
+    padding-top: 5px;
+}
+
+.gallery_3 {
+    display: flex;
+    padding: 0 80px;
+    padding-top: 5px;
+    background: #292929;
+}
+
+.gallery_3 img {
+    width: 50%;
+    padding: 0 80px;
+}
+
+footer {
+    background: url(images/footer.png);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    height: 800px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding-left: 80px;
+    padding-top: 80px;
+}
+
+.footer-h1 {
+    background: none;
+    padding-bottom: 150px;
+    line-height: 1;
+}
+
+.footer-btn {
+    text-decoration: none;
+    font-size: 43px;
+    font-weight: 700;
+    color: #292929;
+    background: #ebebeb;
+    padding: 10px 30px;
+    border-radius: 20px;
+}
+
+.footer-phone {
+    text-decoration: none;
+    font-size: 51px;
+    font-family: 'Poppins';
+    font-weight: 700;
+    color:#292929;
+    padding-top: 50px;
 }
