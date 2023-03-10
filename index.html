@@ -191,6 +191,21 @@
         <a class="footer-btn" href="">ПОЛУЧИТЬ КОНСУЛЬТАЦИЮ</a>
         <a class="footer-phone" href="tel:+79692829730">+7 (969) 282-97-30</a>
     </footer>
+
+    <form class="form" method="post" action="/send.php">
+        <div class="popup">
+            <span class="close">x</span>
+            <div class="form__item">
+                <input class="form__input" type="text" name="name" required placeholder="Имя">
+            </div>
+            <div class="form__item">
+                <input class="form__input" type="text" name="phone" required placeholder="Телефон">
+            </div>
+            <input class="form__input btn" type="submit" value="Отправить">
+            <input type="hidden" name="act" value="order">
+        </div>
+    </form>
+
     <script src="index.js"></script>
 </body>
 </html>
