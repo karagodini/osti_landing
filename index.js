@@ -1,6 +1,8 @@
 const btns = document.querySelectorAll("a");
 const form = document.querySelector(".form");
 const close = document.querySelector(".close");
+const otvet = document.querySelector(".otvet");
+const otvetBtn = document.querySelector(".otvet-btn");
 
 btns.forEach(function(btn) {
     btn.addEventListener('click', function(e) {
@@ -14,6 +16,11 @@ close.addEventListener('click', function(s) {
     form.classList.remove("show");
 })
 
+otvetBtn.addEventListener('click', function(q) {
+  q.preventDefault();
+  otvet.classList.remove("otvet-show");
+})
+
 form.addEventListener('submit', (event) => {
   event.preventDefault();
   const xhr = new XMLHttpRequest();
@@ -22,6 +29,7 @@ form.addEventListener('submit', (event) => {
   xhr.onload = function() {
     if (xhr.status === 200) {
       form.classList.remove("show");
+      otvet.classList.add("otvet-show");
     }
   };
   const formData = new FormData(form);

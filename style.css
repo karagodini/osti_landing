@@ -87,8 +87,8 @@ header {
     text-decoration: none;
     font-size: 30px;
     font-weight: 700;
-    color: #292929;
-    background: #ebebeb;
+    color: #ffffff;
+    background: #a5a5a5;
     padding: 5px 20px;
     border-radius: 40px;
 }
@@ -166,8 +166,8 @@ header {
     text-decoration: none;
     font-size: 30px;
     font-weight: 700;
-    color: #292929;
-    background: #ebebeb;
+    color: #ffffff;
+    background: #a5a5a5;
     padding: 5px 20px;
     border-radius: 40px;
 }
@@ -382,8 +382,8 @@ footer {
     text-decoration: none;
     font-size: 43px;
     font-weight: 700;
-    color: #292929;
-    background: #ebebeb;
+    color: #ffffff;
+    background: #a5a5a5;
     padding: 10px 30px;
     border-radius: 20px;
 }
@@ -627,10 +627,84 @@ span {
     .form__input {
         padding: 10px;
     }
+    .otvet-show {
+        top: 10% !important;
+        left: 10% !important;
+        width: 80% !important;
+        font-size: 24px !important;
+    }
+    .old {
+        margin-bottom: -5px !important;
+        font-size: 10px !important;
+    }
   }
-  /*395px*/
+  
   @media (max-width: 375px) {
     .cart, .cart_2, .cart_3, .cart_4, .cart_5, .cart_6, .cart_7, .cart_8 {
         height: 230px;
     }
+  }
+  
+  .form__input[type="submit"] {
+  padding: 13px;
+  border: 0;
+  border-radius: 7px;
+  box-shadow: 0 0 15px 4px rgba(0, 0, 0, 0.06);
+  margin: 0 auto;
+  width: 80%;
+  display: block;
+  margin-top: 30px;
+  background-color: #007aff;
+  color: #fff;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: 600;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.form__input[type="submit"]:hover,
+.form__input[type="submit"]:focus {
+  background-color: #0056b3;
+}
+
+
+  .old {
+    text-decoration: line-through;
+    color: #c7c7c7;
+    margin-bottom: -30px;
+    font-size: 50px;
+  }
+
+.otvet {
+    display: none;
+  }
+
+.otvet-show {
+    display: flex;
+    flex-direction: column;
+    top: 30%;
+    left: 40%;
+    position: fixed;
+    width: 30%;
+    height: 30%;
+    background: #ababab;
+    border-radius: 10px;
+    padding: 30px;
+    font-size: 30px;
+    box-shadow: 0 0 20px rgb(0 0 0 / 50%);
+    color: #FFFFFF;
+  }
+
+  .otvet-btn {
+    width: 20%;
+    margin: 0 auto;
+    height: 20%;
+    margin-top: 40px;
+    background: #007aff;
+    border: none;
+    border-radius: 10px;
+    color: #FFF;
+    font-size: 25px;
+    cursor: pointer;
   }
