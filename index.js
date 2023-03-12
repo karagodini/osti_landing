@@ -9,17 +9,22 @@ btns.forEach(function(btn) {
     })
 })
 
-
 close.addEventListener('click', function(s) {
     s.preventDefault();
     form.classList.remove("show");
 })
 
 form.addEventListener('submit', (event) => {
-    event.preventDefault();
-    const formData = new FormData(form);
-        fetch('/send.php', {
-            method: 'POST',
-            body: formData
-        })
-})
+  event.preventDefault();
+  const xhr = new XMLHttpRequest();
+  xhr.open('POST', '/send.php');
+  xhr.setRequestHeader('Content-Type', 'application/x-www-form-urlencoded');
+  xhr.onload = function() {
+    if (xhr.status === 200) {
+      form.classList.remove("show");
+    }
+  };
+  const formData = new FormData(form);
+  const encodedData = new URLSearchParams(formData).toString(); // encode form data
+  xhr.send(encodedData); // send encoded form data with the request
+});
